@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>QR Code | Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main" id="main">
+      <h1 class="title">QR Code Generator</h1>
+
+      <form id="form" class="mt-4">
+        <input id="input" type="text" placeholder="Enter a URL" />
+
+        <select class="" name="size" id="size">
+          <option value="100">100x100</option>
+          <option value="200">200x200</option>
+          <option value="300" selected>300x300</option>
+          <option value="400">400x400</option>
+          <option value="500">500x500</option>
+          <option value="600">600x600</option>
+          <option value="700">700x700</option>
+        </select>
+        <button class="submit" id="submit">Generate QR Code</button>
+      </form>
+
+      <div class="qr-img">
+        <div id="qrcode" class="qr-img"></div>
+      </div>
+    </div>
+    <p class="copy-right">©copyright 2022 | Kabir Hossain</p>
+  </body>
+  <script src="./App.js"></script>
+</html>
